@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Staff Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>New Staff Details Form</h2>
+    <p>Please fill the following form carefully.</p>
+    <form action="thank_you.html" method="POST">
+        <table>
+            <tr>
+                <label for="staff_id">Staff ID:</label>
+                <input type="number" name="staff_id" id="staff_id" required>
+                <br>
+            </tr>
+            <tr>
+                <td>
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="" disabled selected></option>
+                        <option value="AKS">Akwa Ibom</option>
+                        <option value="ABJ">Abuja</option>
+                        <option value="CRS">Cross River</option>
+                        <option value="DES">Delta</option>
+                        <option value="EBS">Ebonyi</option>
+                        <option value="EKS">Ekiti</option>
+                        <option value="IMS">Imo</option>
+                        <option value="OSS">Osun</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="ppa_location">Primary Place of Assignment</label>
+                    <input type="text" name="ppa_location" id="ppa_location" required>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                        <br>
+                </td>
+                <td><label for="last_name">Surname:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="designation">Designation:</label>
+                    <input type="text" name="designation" id="designation">
+                    <br>
+                </td>
+                <td><label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="" disabled selected></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone_no" name="phone_no" value="+234" required>
+                    <br>
+                </td>
+                <td><label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. example@ecews.org" required>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="project">Project:</label>
+                    <select name="project" id="project">
+                        <option value="" disabled selected></option>
+                        <option value="ace_5">ACE 5</option>
+                        <option value="speed">SPEED</option>
+                        <option value="nahi">NAHI</option>
+                    </select>
+                    <br>
+                </td>
+                <td><label for="funder">Funder:</label>
+                    <select name="funder" id="funder">
+                        <option value="" selected disabled></option>
+                        <option value="USAID">USAID</option>
+                        <option value="global_fund">Global Fund</option>
+                        <option value="CDC">CDC</option>
+                    </select><br>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <label for="supervisor_code">Supervisor's Code:</label>
+                    <input type="number" name="supervisor_code" id="supervisor_code">
+                <input type="submit" value="Submit">                  
+        </table>
+    </form>  
+    <script src="javascript.js"></script>
+</body>
+</html>
